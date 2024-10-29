@@ -10,7 +10,7 @@
 # use parenthesis to group if needed
 def free_shipping(age, permission, price, prime):
     if prime == "Yes":
-        if age > 18:
+        if age >= 18:
             print("you got Free shipping")
         else: 
             print("Did your parent give you permission")
@@ -20,7 +20,7 @@ def free_shipping(age, permission, price, prime):
             else:
                 print("please ask for parent permission")
     else:
-        if price > 25:
+        if price >= 25:
             print("you got free shipping")
         else:
             print("you dont have free shipping")
